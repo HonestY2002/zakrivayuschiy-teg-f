@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: "Inter-Variable";
-  src: url(./Inter-Variable.woff2) format("woff");
+  src: url(./Inter-Variable.woff2) format("woff2");
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Inter-Variable";
-  src: url(./Inter-Variable.woff2) format("woff");
+  src: url(./Inter-Variable.woff2) format("woff2");
   font-weight: bold;
   font-display: swap;
 }
@@ -18,12 +18,10 @@
   font-family: "PressStart2P";
   src: url(/fonts/PressStart2P-Regular.woff) format("woff");
   font-weight: normal;
-
 }
 
 @font-face {
   font-family: "PressStart2P";
   src: url(./PressStart2P-Regular.woff) format("woff");
   font-weight: bold;
- 
 }
