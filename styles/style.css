@@ -19,7 +19,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   margin-block-start: 100px;
-  font-variation-settings: 400;
+  font-variation-settings: "wght" 400;
   font-family: var(--font-famaly-main);
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@
   gap: 20px;
   display: grid;
   justify-content: center;
-  font-variation-settings: 400;
+  font-variation-settings: "wght" 400;
   background-color: var(--background-color);
   max-width: 696px;
 }
@@ -75,7 +75,7 @@
 .main__text {
   max-width: 675px;
   font-size: 18px;
-  font-variation-settings: 400;
+  font-variation-settings: "wght" 400;
   line-height: 21px;
   padding-left: 25px;
   font-family: var(--font-famaly-main);
@@ -229,7 +229,7 @@
 .title {
   border-bottom: var(--border);
   font-size: 18px;
-  font-variation-settings: 700;
+  font-variation-settings: "wght" 700;
   background-color: var(--background-color);
   padding: 5px 0px 5px 10px;
 }
@@ -382,7 +382,7 @@
   display: block;
   font-family: var(--font-famaly-title);
   font-size: 14px;
-  font-variation-settings: 400;
+  font-variation-settings: "wght" 400;
   line-height: 12.6px;
 }
 
@@ -393,7 +393,7 @@
 .dialog__text {
   font-family: var(--font-famaly-title);
   font-size: 14px;
-  font-variation-settings: 400;
+  font-variation-settings: "wght" 400;
   line-height: 21px;
 }
 
