@@ -10,7 +10,7 @@
   --text-color: #000000;
   --border: 2px solid black;
   --repeating-linear-gradient-color: #d3d3d3;
-  --linear-gradient: linear-gradient(#e7e7e7 0.01%, #e7e7e7, #1a1a1a);
+  --linear-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --fill-color-heart: #ff0000;
   --color-contour: black;
   --color-core: white;
@@ -19,12 +19,12 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root.theme-light {
     --background-color: white;
     --text-color: #000000;
     --border: 2px solid black;
     --repeating-linear-gradient-color: #d3d3d3;
-    --linear-gradient: linear-gradient(#e7e7e7 0.01%, #e7e7e7, #1a1a1a);
+    --linear-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
     --fill-color-heart: #ff0000;
     --color-contour: black;
     --color-core: white;
@@ -37,7 +37,7 @@
   --background-color: black;
   --text-color: #00cc14;
   --border: 2px solid #00cc14;
-  --repeating-linear-gradient-color: #004308;
+  --repeating-linear-gradient-color: #000;
   --linear-gradient: linear-gradient(#007f0c 0.01%, #004308);
   --fill-color-heart: #ff0000;
   --color-contour: #00cc14;
@@ -47,12 +47,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root.theme-dark {
     --background-color: black;
     --text-color: #00cc14;
     --border: 2px solid #00cc14;
-    --repeating-linear-gradient-color: #004308;
-    --linear-gradient: linear-gradient(#007f0c 0.01%, #007f0c);
+    --repeating-linear-gradient-color: #000;
+    --linear-gradient: linear-gradient(#007f0c 0.01%, #004308);
     --fill-color-heart: #ff0000;
     --color-contour: #00cc14;
     --color-core: white;
