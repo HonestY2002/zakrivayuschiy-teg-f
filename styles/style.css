@@ -1,19 +1,3 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
-*/
-
 .page {
   max-width: 1440px;
   min-inline-size: 320px;
@@ -25,7 +9,7 @@
   align-items: center;
   display: grid;
   background-color: var(--background-color);
-  color: var(--text-color);
+  color: var(--main-color);
   background-size: cover;
   background-image: repeating-linear-gradient(
       to right,
@@ -57,7 +41,7 @@
   gap: 12px;
   display: grid;
   justify-content: center;
-  padding: 2px 0px 20px 15px;
+  padding: 2px 0px 22px 15px;
 }
 
 .header__title {
@@ -74,11 +58,11 @@
 }
 
 .main__text {
-  max-width: 675px;
+  max-width: 670px;
   font-size: 18px;
   font-variation-settings: "wght" 400;
   line-height: 21px;
-  padding-left: 25px;
+  padding-left: 24px;
   font-family: var(--font-famaly-main);
 }
 
@@ -105,11 +89,11 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--text-color);
   content: "";
   transition: width 0.3s ease-out;
-  opacity: 0.6;
+  opacity: 60%;
 }
+
 .theme-menu__button:focus {
   outline: none;
 }
@@ -119,7 +103,7 @@
 }
 
 .theme-menu__button:disabled {
-  opacity: 0.6;
+  opacity: 60%;
   position: relative;
   pointer-events: none;
 }
@@ -131,12 +115,12 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  color: var(--accent-color);
-  animation: rotatemove 0.5s ease-in-out infinite;
+  color: var(--main-color);
+  animation: rotatemove 0.9s ease-in-out infinite;
   pointer-events: none;
   left: -17px;
   top: 0px;
-  opacity: 0.6;
+  opacity: 60%;
 }
 
 .button__text {
@@ -182,7 +166,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  color: var(--text-color);
+  color: var(--main-color);
   background-color: var(--background-color);
   transition: 0.5s ease-in-out;
   mix-blend-mode: difference;
@@ -195,7 +179,6 @@
 
 .card__like-button {
   min-width: 130px;
-  min-height: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,15 +189,15 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-width: 337px;
-  min-height: 55px;
   margin-block-end: 40px;
+  min-width: 335px;
+  min-height: 54px;
 }
 
 .like-icon {
   border: none;
   background-color: var(--background-color);
-  color: var(--text-color);
+  color: var(--main-color);
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -233,6 +216,7 @@
   font-variation-settings: "wght" 700;
   background-color: var(--background-color);
   padding: 5px 0px 5px 10px;
+  color: var(--main-color);
 }
 
 .content__inside {
@@ -245,7 +229,6 @@
 }
 
 .card__image {
-  position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -258,8 +241,8 @@
   font-size: 14px;
   line-height: 14px;
   opacity: 50%;
-  top: 27px;
-  right: 25px;
+  top: 26px;
+  right: 23px;
   position: absolute;
   mix-blend-mode: hard-light;
   text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color),
@@ -354,7 +337,7 @@
 
 .dialog {
   background-color: var(--background-color);
-  color: var(--text-color);
+  color: var(--main-color);
   border: var(--border);
   max-width: 357px;
 }
@@ -402,7 +385,7 @@
 .dialog_floppy {
   height: 39px;
   width: 39px;
-  color: var(--text-color);
+  color: var(--main-color);
 }
 
 .dialog_label {
@@ -414,8 +397,8 @@
 }
 
 .save_floppy {
-  height: 21px;
-  width: 21px;
+  max-width: 21px;
+  max-height: 21px;
 }
 
 @media (width <= 375px) {
@@ -432,7 +415,8 @@
     max-width: 350px;
   }
   .main__text {
-    max-width: 340px;
+    max-width: 344px;
+    
   }
   .main__content {
     gap: 23px;
@@ -440,6 +424,10 @@
   .card__save-button {
     display: flex;
     flex-direction: column;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    min-width: 306px;
   }
   .header {
     gap: 10px;
@@ -457,11 +445,15 @@
     gap: 50px;
   }
   .save_floppy {
-    height: 28px;
-    width: 28px;
+    max-width: 28px;
+    max-height: 28px;
+    margin-top: 14px;
   }
   .label {
     top: 22px;
     right: 11px;
+  }
+  .dialog {
+    max-width: 341px;
   }
 }

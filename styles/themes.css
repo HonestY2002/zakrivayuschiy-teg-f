@@ -7,7 +7,7 @@
 
 .theme-light {
   --background-color: white;
-  --text-color: #000000;
+  --main-color: #000000;
   --border: 2px solid black;
   --repeating-linear-gradient-color: #d3d3d3;
   --linear-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
@@ -21,7 +21,7 @@
 @media (prefers-color-scheme: light) {
   :root.theme-light {
     --background-color: white;
-    --text-color: #000000;
+    --main-color: #000000;
     --border: 2px solid black;
     --repeating-linear-gradient-color: #d3d3d3;
     --linear-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
@@ -35,8 +35,8 @@
 
 .theme-dark {
   --background-color: black;
-  --text-color: #00cc14;
-  --border: 2px solid #00cc14;
+  --main-color: #00CC14;
+  --border: 2px solid #00CC14;
   --repeating-linear-gradient-color: #000;
   --linear-gradient: linear-gradient(#007f0c 0.01%, #004308);
   --fill-color-heart: #ff0000;
@@ -49,8 +49,8 @@
 @media (prefers-color-scheme: dark) {
   :root.theme-dark {
     --background-color: black;
-    --text-color: #00cc14;
-    --border: 2px solid #00cc14;
+    --main-color: #00CC14;
+  --border: 2px solid #00CC14;
     --repeating-linear-gradient-color: #000;
     --linear-gradient: linear-gradient(#007f0c 0.01%, #004308);
     --fill-color-heart: #ff0000;
