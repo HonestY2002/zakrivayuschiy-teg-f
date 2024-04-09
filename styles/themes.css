@@ -16,6 +16,7 @@
   --color-core: white;
   --font-famaly-main: "Inter-Variable", "Arial", sans-serif;
   --font-famaly-title: "PressStart2P", "Arial", sans-serif;
+  --color-button: white;
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,13 +31,14 @@
     --color-core: white;
     --font-famaly-main: "Inter-Variable", "Arial", sans-serif;
     --font-famaly-title: "PressStart2P", "Arial", sans-serif;
+     --color-button: white;
   }
 }
 
 .theme-dark {
   --background-color: black;
-  --main-color: #00CC14;
-  --border: 2px solid #00CC14;
+  --main-color: #00cc14;
+  --border: 2px solid #00cc14;
   --repeating-linear-gradient-color: #000;
   --linear-gradient: linear-gradient(#007f0c 0.01%, #004308);
   --fill-color-heart: #ff0000;
@@ -44,13 +46,14 @@
   --color-core: white;
   --font-famaly-main: "Inter-Variable", "Arial", sans-serif;
   --font-famaly-title: "PressStart2P", "Arial", sans-serif;
+   --color-button: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
   :root.theme-dark {
     --background-color: black;
-    --main-color: #00CC14;
-  --border: 2px solid #00CC14;
+    --main-color: #00cc14;
+    --border: 2px solid #00cc14;
     --repeating-linear-gradient-color: #000;
     --linear-gradient: linear-gradient(#007f0c 0.01%, #004308);
     --fill-color-heart: #ff0000;
@@ -58,5 +61,6 @@
     --color-core: white;
     --font-famaly-main: "Inter-Variable", "Arial", sans-serif;
     --font-famaly-title: "PressStart2P", "Arial", sans-serif;
+     --color-button: #00cc14;
   }
 }

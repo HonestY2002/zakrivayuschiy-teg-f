@@ -61,3 +61,13 @@
     transform-origin: center;
   }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .like-icon.is-liked .heart .core {
+    animation: scaleheart 0.3s 1s ease-in alternate;
+  }
+
+  .is-liked .sparks {
+    animation: sparks 0.3s 0.3s ease-in alternate;
+  }
+}

@@ -17,7 +17,7 @@
   </head>
   <body class="page">
     <header class="header content__inside">
-      <h1 class="header__title"><a>&lt;/HTML&gt;</a></h1>
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
       <h1 class="header__title-text">ЗАКРЫВАЮЩИЙ ТЕГ</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -66,7 +66,7 @@
             Место для ваших воспоминаний о начале обучения.
           </p>
           <div class="button__text button__text__like">
-            <button class="like-icon card__icon-button" type="submit">
+            <button class="like-icon card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -184,7 +184,7 @@
             Место для ваших воспоминаний об окончании первого спринта.
           </p>
           <div class="button__text button__text__like">
-            <button class="like-icon card__icon-button" type="submit">
+            <button class="like-icon card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -244,7 +244,7 @@
             Место для ваших воспоминаний о начале второго спринта.
           </p>
           <div class="button__text button__text__like">
-            <button class="like-icon card__icon-button" type="submit">
+            <button class="like-icon card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -305,7 +305,7 @@
             Место для ваших воспоминаний об окончании второго спринта.
           </p>
           <div class="button__text button__text__like">
-            <button class="like-icon card__icon-button" type="submit">
+            <button class="like-icon card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -363,7 +363,7 @@
             Место для ваших воспоминаний о начале третьего спринта.
           </p>
           <div class="button__text button__text__like">
-            <button class="like-icon card__icon-button" type="submit">
+            <button class="like-icon card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -423,7 +423,7 @@
             Место для ваших воспоминаний об окончании третьего спринта.
           </p>
           <div class="button__text button__text__like">
-            <button class="like-icon card__icon-button" type="submit">
+            <button class="like-icon card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -485,7 +485,7 @@
             этой точке пути.
           </p>
           <div class="button__text button__text__like">
-            <button class="like-icon card__icon-button" type="submit">
+            <button class="like-icon card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -527,7 +527,7 @@
         <button
           class="card__botton card__save-button"
           type="button"
-          onclick="window['dialog-id'].showModal();"
+          onclick="window['dialog-id'].showModal()"
           aria-controls="dialog-id"
         >
           <svg viewBox="0 0 21 21" fill="currentColor" class="save_floppy">
@@ -544,10 +544,12 @@
             </svg>
             <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
           </div>
+        </form>
+        <form method="dialog">
           <button
-            type="submit"
-            class="dialog__button card__botton"
-            aria-controls="dialog-id"
+            type="button"
+            class="card__botton close-button"
+            onclick="window['dialog-id'].close()"
           >
             <span>ок</span>
           </button>
