@@ -5,36 +5,6 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-.theme-light {
-  --background-color: white;
-  --main-color: #000000;
-  --border: 2px solid black;
-  --repeating-linear-gradient-color: #d3d3d3;
-  --linear-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-  --fill-color-heart: #ff0000;
-  --color-contour: black;
-  --color-core: white;
-  --font-famaly-main: "Inter-Variable", "Arial", sans-serif;
-  --font-famaly-title: "PressStart2P", "Arial", sans-serif;
-  --color-button: white;
-}
-
-@media (prefers-color-scheme: light) {
-  :root.theme-light {
-    --background-color: white;
-    --main-color: #000000;
-    --border: 2px solid black;
-    --repeating-linear-gradient-color: #d3d3d3;
-    --linear-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-    --fill-color-heart: #ff0000;
-    --color-contour: black;
-    --color-core: white;
-    --font-famaly-main: "Inter-Variable", "Arial", sans-serif;
-    --font-famaly-title: "PressStart2P", "Arial", sans-serif;
-     --color-button: white;
-  }
-}
-
 .theme-dark {
   --background-color: black;
   --main-color: #00cc14;
@@ -46,7 +16,8 @@
   --color-core: white;
   --font-famaly-main: "Inter-Variable", "Arial", sans-serif;
   --font-famaly-title: "PressStart2P", "Arial", sans-serif;
-   --color-button: #00cc14;
+  --color-button: #00cc14;
+  --button-shadow: 2px 2px #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,6 +32,39 @@
     --color-core: white;
     --font-famaly-main: "Inter-Variable", "Arial", sans-serif;
     --font-famaly-title: "PressStart2P", "Arial", sans-serif;
-     --color-button: #00cc14;
+    --color-button: #00cc14;
+    --button-shadow: 2px 2px #00cc14;
+  }
+}
+
+.theme-light {
+  --background-color: white;
+  --main-color: #000000;
+  --border: 2px solid black;
+  --repeating-linear-gradient-color: #d3d3d3;
+  --linear-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --fill-color-heart: #ff0000;
+  --color-contour: black;
+  --color-core: white;
+  --font-famaly-main: "Inter-Variable", "Arial", sans-serif;
+  --font-famaly-title: "PressStart2P", "Arial", sans-serif;
+  --color-button: white;
+  --button-shadow: 2px 2px black;
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-light {
+    --background-color: white;
+    --main-color: #000000;
+    --border: 2px solid black;
+    --repeating-linear-gradient-color: #d3d3d3;
+    --linear-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --fill-color-heart: #ff0000;
+    --color-contour: black;
+    --color-core: white;
+    --font-famaly-main: "Inter-Variable", "Arial", sans-serif;
+    --font-famaly-title: "PressStart2P", "Arial", sans-serif;
+    --color-button: white;
+    --button-shadow: 2px 2px black;
   }
 }
