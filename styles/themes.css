@@ -18,6 +18,8 @@
   --font-famaly-title: "PressStart2P", "Arial", sans-serif;
   --color-button: #00cc14;
   --button-shadow: 2px 2px #00cc14;
+  --wght-text: 400;
+  --wght-title: 700;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +36,8 @@
     --font-famaly-title: "PressStart2P", "Arial", sans-serif;
     --color-button: #00cc14;
     --button-shadow: 2px 2px #00cc14;
+    --wght-text: 400;
+    --wght-title: 700;
   }
 }
 
@@ -50,6 +54,8 @@
   --font-famaly-title: "PressStart2P", "Arial", sans-serif;
   --color-button: white;
   --button-shadow: 2px 2px black;
+  --wght-text: 400;
+  --wght-title: 700;
 }
 
 @media (prefers-color-scheme: light) {
@@ -66,5 +72,7 @@
     --font-famaly-title: "PressStart2P", "Arial", sans-serif;
     --color-button: white;
     --button-shadow: 2px 2px black;
+    --wght-text: 400;
+    --wght-title: 700;
   }
 }
