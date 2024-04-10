@@ -386,7 +386,7 @@
 .dialog__text {
   font-family: var(--font-famaly-title);
   font-size: 14px;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: var(--wght-text);
   line-height: 21px;
   text-transform: uppercase;
 }
