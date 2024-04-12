@@ -4,7 +4,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   margin-block-start: 100px;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" var(--text-wght);
   font-family: var(--font-famaly-main);
   justify-content: center;
   display: grid;
@@ -60,7 +60,7 @@
 .main__text {
   max-width: 670px;
   font-size: 18px;
-  font-variation-settings: var(--wght-text);
+  font-variation-settings: "wght" var(--text-wght);
   line-height: 21px;
   padding-left: 24px;
   font-family: var(--font-famaly-main);
@@ -70,14 +70,14 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 26px;
 }
 
 .theme-menu__button {
   background-color: transparent;
   border: none;
   font-size: 14px;
-  font-variation-settings: 400;
+  font-variation-settings: "wght" var(--text-wght);
   line-height: 14px;
   cursor: pointer;
   position: relative;
@@ -136,7 +136,7 @@
   margin-block-start: 101px;
   max-width: 696px;
   display: grid;
-  gap: 54px;
+  gap: 51px;
 }
 
 .button__text__like {
@@ -219,11 +219,10 @@
 }
 
 .title {
-  border-bottom: var(--border);
   font-size: 18px;
-  font-variation-settings: var(--wght-title);
+  font-variation-settings: "wght" var(--title-wght);
   background-color: var(--background-color);
-  padding: 5px 0px 5px 10px;
+  padding: 3px 0px 5px 7px;
   color: var(--main-color);
 }
 
@@ -242,6 +241,7 @@
   object-fit: cover;
   object-position: center;
   border-bottom: var(--border);
+  border-top: var(--border);
 }
 
 .label {
@@ -375,7 +375,7 @@
   display: block;
   font-family: var(--font-famaly-title);
   font-size: 14px;
-  font-variation-settings: var(--wght-text);
+  font-variation-settings: "wght" var(--text-wght);
   line-height: 12.6px;
 }
 
@@ -386,7 +386,7 @@
 .dialog__text {
   font-family: var(--font-famaly-title);
   font-size: 14px;
-  font-variation-settings: var(--wght-text);
+  font-variation-settings: "wght" var(--text-wght);
   line-height: 21px;
   text-transform: uppercase;
 }
@@ -421,6 +421,9 @@
 }
 
 @media (width <= 375px) {
+  .card__like-button {
+    margin-top: 5px;
+  }
   .close-button {
     min-width: 257px;
     align-items: center;
@@ -433,13 +436,14 @@
     margin-inline-start: 10px;
   }
   .title {
-    max-width: 350px;
+    max-width: 360px;
+    padding: 6px 0px 5px 9px;
   }
   .main__text {
     max-width: 344px;
   }
   .main__content {
-    gap: 23px;
+    gap: 22px;
   }
   .card__save-button {
     display: flex;
@@ -457,12 +461,6 @@
   }
   .header__title {
     margin-block-start: 111px;
-  }
-  .page {
-    margin-block-start: 127px;
-  }
-  .main {
-    gap: 56px;
   }
   .save_floppy {
     max-width: 28px;
